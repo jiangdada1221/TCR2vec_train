@@ -10,7 +10,7 @@ pip install .
 Note that, you need to install [parasail](https://github.com/jeffdaily/parasail) to train TCR2vec.
 
 ## Data
-We have deposited the pretraining data (namely the *Emerson data*) on google drive. The data can be accessed via this [link]().
+We have deposited the pretraining data (namely the *Emerson data*) on google drive. The data can be accessed via this [link](https://drive.google.com/file/d/1gp88atZT_pDYZ9PZPXD1YvzWnCeJgM7m/view?usp=sharing).
 
 ## Training
 ### Training script
