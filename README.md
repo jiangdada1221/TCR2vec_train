@@ -18,7 +18,9 @@ We have deposited the pretraining data (namely the *Emerson data*) on google dri
 tape-train transformer mlm_spm_full --batch_size 64 --learning_rate 1e-4 --fp16 --gradient_accumulation_steps 1 \
 --model_config_file tape/config/transformer_10spm.json --output_dir results/ --data_dir tape/data/emerson_small/ 
 ```
-We have also provided the script for CDR3vec. Just change __mlm_spm_full__ to __mlm_spm_cdr3__. For more options, please refer to the original [TAPE](https://github.com/songlab-cal/tape). 
+We have also provided the script for CDR3vec. Just change __mlm_spm_full__ to __mlm_spm_cdr3__. For more options, please refer to the original [TAPE](https://github.com/songlab-cal/tape). <br />
+
+Moreover, example scripts for pretraining can be found in [*scripts/*](https://github.com/jiangdada1221/TCR2vec_train/blob/main/scripts/run.sh).
 
 ### Architecture
 The parameters for the transformer arthitecture are specified by the json files in [tape/config/](https://github.com/jiangdada1221/TCR2vec_train/tree/main/tape/config). You can modify the config files to change the complexity of the model architecture. Besides, the *spm_weight* specify the task weight of SPM. 
