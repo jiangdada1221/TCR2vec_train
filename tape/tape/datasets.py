@@ -252,10 +252,9 @@ class TCR_full(Dataset):
             print('load csv file')
             self.data = pd.read_csv(data_file)['full_seq'].values
         elif str(data_file).endswith('.tsv') :            
-            #should be here!!!  
             data = pd.read_csv(data_file,compression='gzip',sep='\t')
-            cdr3,v,j,full = data['cdr3'].values,data['v'].values,data['j'].values,data['full_seq'].values
-            self.data = np.array([(cdr3[i],v[i],j[i],full[i]) for i in range(len(cdr3))])
+            cdr3,full = data['cdr3'].values,data['full_seq'].values
+            self.data = np.array([(cdr3[i],full[i]) for i in range(len(cdr3))])
 
     def __len__(self) -> int:
 
