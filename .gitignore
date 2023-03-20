@@ -4,6 +4,11 @@ results/
 pretrained_models/
 wandb/
 scratch/
+emerson_full
+emerson_small
+tape/emerson_full
+tape/emersoon_small
+tape/data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
