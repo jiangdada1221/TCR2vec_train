@@ -24,5 +24,5 @@ We have also provided the script for CDR3vec. Just change __mlm_spm_full__ to __
 The parameters for the transformer arthitecture are specified by the json files in [tape/config/](https://github.com/jiangdada1221/TCR2vec_train/tree/main/tape/config). You can modify the config files to change the complexity of the model architecture. Besides, the *spm_weight* specify the task weight of SPM. 
 
 ### Custom dataset
-If you want to pretrain TCR2vec on your own dataset, please make sure that the format is *.tsv*; compression='gzip' (see [to_csv](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)); sep='\t'; the respective column names for CDR3 and full TCR are *cdr3* and *full_seq*. 
+If you want to pretrain TCR2vec on your own dataset, please make sure that the dataset format is *.tsv*; compression='gzip' (see [to_csv](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)); sep='\t'; the respective column names for CDR3 and full TCR are *cdr3* and *full_seq*. 
 
