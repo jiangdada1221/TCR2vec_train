@@ -21,7 +21,7 @@ tape-train transformer mlm_spm_full --batch_size 64 --learning_rate 1e-4 --fp16 
 We have also provided the script for CDR3vec. Just change __mlm_spm_full__ to __mlm_spm_cdr3__. For more options, please refer to the original [TAPE](https://github.com/songlab-cal/tape). 
 
 ### Architecture
-The parameters for the transformer arthitecture are specified by the json files in __tape/config/__. You can modify the config files to change the complexity of the model architecture. Besides, the *spm_weight* specify the task weight of SPM. 
+The parameters for the transformer arthitecture are specified by the json files in [tape/config/](https://github.com/jiangdada1221/TCR2vec_train/tree/main/tape/config). You can modify the config files to change the complexity of the model architecture. Besides, the *spm_weight* specify the task weight of SPM. 
 
 ### Custom dataset
 If you want to pretrain TCR2vec on your own dataset, please make sure that the format is *.tsv*; compression='gzip' (see [to_csv](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)); sep='\t'; the respective column names for CDR3 and full TCR are *cdr3* and *full_seq*. 
